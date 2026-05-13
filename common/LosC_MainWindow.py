@@ -1,0 +1,6 @@
+
+
+# 标题
+MAIN_WINDOW_TITLE = "LosSc by LosAngelous"
+MAIN_WINDOW_WIDTH = 1200
+MAIN_WINDOW_HEIGHT = 800
