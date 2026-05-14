@@ -395,6 +395,35 @@ NEWS_LIST_PAGE_QSS = f"""
     line-height: 1.8;
 }}
 
+#NewsDetailTitle {{
+    color: #ffffff;
+    font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+}}
+
+#NewsDetailMeta {{
+    color: #8ab4f8;
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 12px;
+    padding: 4px 0 10px 0;
+}}
+
+#NewsDetailSummary {{
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-top: 8px;
+}}
+
+#NewsDetailLink {{
+    color: #6aa9ff;
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 12px;
+    padding-top: 12px;
+}}
+
 #NewsItemLabel {{
     background-color: #0a0a0a;
     color: #dddddd;
@@ -425,4 +454,39 @@ NEWS_LIST_PAGE_QSS = f"""
     background-color: #222222;
     border: 1px solid #ffffff;
 }}
+
+
+
+QScrollArea {{
+    background-color: transparent;
+    border: none;
+}}
+
+QScrollBar:vertical {{
+    background-color: #0a0a0a;
+    width: 8px;
+    margin: 0;
+}}
+
+QScrollBar::handle:vertical {{
+    background-color: #333333;
+    min-height: 24px;
+}}
+
+QScrollBar::handle:vertical:hover {{
+    background-color: #555555;
+}}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {{
+    height: 0;
+    background: none;
+}}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {{
+    background: none;
+}}
+
+
 """

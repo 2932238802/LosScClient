@@ -1,0 +1,72 @@
+"""
+LosNewsListPage 
+
+只放新闻列表页 View 会用到的固定配置：
+- objectName
+- 文案
+- layout 间距 / margin
+- 左右栏宽度
+- stretch 比例
+"""
+
+# objectName
+NEWS_LIST_PAGE_OBJECT_NAME = "LosNewsListPage"
+NEWS_PAGE_TITLE_OBJECT_NAME = "NewsPageTitle"
+NEWS_PAGE_SUBTITLE_OBJECT_NAME = "NewsPageSubtitle"
+NEWS_LIST_BOX_OBJECT_NAME = "NewsListBox"
+NEWS_DETAIL_BOX_OBJECT_NAME = "NewsDetailBox"
+NEWS_SECTION_TITLE_OBJECT_NAME = "NewsSectionTitle"
+NEWS_EMPTY_TEXT_OBJECT_NAME = "NewsEmptyText"
+NEWS_DETAIL_TITLE_OBJECT_NAME = "NewsDetailTitle"
+NEWS_DETAIL_META_OBJECT_NAME = "NewsDetailMeta"
+NEWS_DETAIL_SUMMARY_OBJECT_NAME = "NewsDetailSummary"
+NEWS_DETAIL_LINK_OBJECT_NAME = "NewsDetailLink"
+NEWS_ITEM_BUTTON_OBJECT_NAME = "NewsItemButton"
+
+
+# layout 
+# margin / spacing
+NEWS_ROOT_MARGINS = (56, 52, 56, 40)
+NEWS_ROOT_SPACING = 28
+NEWS_BODY_SPACING = 18
+
+NEWS_BOX_MARGINS = (24, 22, 24, 22)
+NEWS_BOX_SPACING = 12
+
+NEWS_LIST_WIDGET_MARGINS = (0, 0, 0, 0)
+NEWS_LIST_WIDGET_SPACING = 12
+
+
+# width
+# stretch
+NEWS_LIST_BOX_MIN_WIDTH = 360
+NEWS_DETAIL_BOX_MIN_WIDTH = 520
+NEWS_ITEM_BUTTON_HEIGHT = 72
+NEWS_ITEM_TITLE_MAX_LEN = 48
+NEWS_ITEM_TITLE_ELLIPSIS = "..."
+
+NEWS_LIST_BOX_STRETCH = 2
+NEWS_DETAIL_BOX_STRETCH = 3
+NEWS_SCROLL_STRETCH = 1
+NEWS_BOTTOM_STRETCH = 1
+
+
+# text
+NEWS_LIST_SECTION_TITLE = "NEWS LIST"
+NEWS_DETAIL_SECTION_TITLE = "DETAIL"
+
+NEWS_LIST_EMPTY_TEXT = "新闻列表将在这里显示"
+NEWS_NO_DATA_TEXT = "暂无新闻数据"
+NEWS_LOADING_TEXT = "正在加载新闻数据..."
+
+NEWS_DETAIL_DEFAULT_TITLE = "选择一条新闻查看详情"
+NEWS_DETAIL_DEFAULT_META = "/ waiting / selected"
+NEWS_DETAIL_DEFAULT_SUMMARY = "点击左侧新闻列表中的任意条目，详情会显示在这里。"
+NEWS_SUMMARY_EMPTY_TEXT = "无摘要"
+
+NEWS_DETAIL_CONTENT_EMPTY_TEXT = "暂无正文内容，当前仅显示 RSS 摘要"
+NEWS_DETAIL_LINK_PREFIX = "原文链接："
+
+# item text
+NEWS_ITEM_TEXT_TEMPLATE = "{index:02d}  {title}\n     {news_name} / {column_name} · {published}"
+NEWS_DETAIL_META_TEMPLATE = "/ {news_name} / {column_name} / {published}"

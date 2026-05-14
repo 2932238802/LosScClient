@@ -52,10 +52,10 @@ class LosMainWindow(QMainWindow):
         splitter.addWidget(self.L_nav_panel)
         splitter.addWidget(self.L_content_area)
         splitter.setSizes([260, MAIN_WINDOW_WIDTH - 260])
-        splitter.setStretchFactor(0, 0)         # 0 表示控制索引
-        splitter.setStretchFactor(1, 1)         # 左侧的1 也是 右侧的1表示多吃掉剩下的空间
+        splitter.setStretchFactor(0, 0)                                 # 0 表示控制索引
+        splitter.setStretchFactor(1, 1)                                 # 左侧的1 也是 右侧的1表示多吃掉剩下的空间
         splitter.setHandleWidth(2)
-        splitter.setChildrenCollapsible(False)  # 这个就是可以保证 不会被拖没
+        splitter.setChildrenCollapsible(False)                          # 这个就是可以保证 不会被拖没
         self.setCentralWidget(splitter)
         status_bar = QStatusBar()
         status_bar.addWidget(self.L_status_label)
@@ -74,7 +74,6 @@ class LosMainWindow(QMainWindow):
         self.L_news_ct = LosNewsCT(self.L_content_area.L_pages)
         get_router().Ls_nav_selected.connect(self.L_content_area.Lf_switch_to)
         get_router().Ls_nav_selected.connect(self._Lf_on_nav_selected)
-
 
 
 
